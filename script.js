@@ -9,6 +9,7 @@ snake[0] = {
   y: 8 * box,
 };
 let direction = "right";
+let food = {};
 
 // Função para criação de background
 function criarBG() {
@@ -22,6 +23,12 @@ function criarCobrinha() {
     context.fillStyle = "green";
     context.fillRect(snake[i].x, snake[i].y, box, box);
   }
+}
+
+//Função para criar a comida
+function drawFood() {
+  context.fillStyle = "orange";
+  context.fillRect();
 }
 
 document.addEventListener("keydown", update);
